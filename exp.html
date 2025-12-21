@@ -1,24 +1,145 @@
-<head>
-    <meta charset="utf-8">
-    <title>My Website</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+    <title>Hacktoberfest Portfolio Showcase</title>
 
-    <!-- Link your CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+    /* General body styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #000000, #2b2c2e);
+      color: #7bff00;
+      margin: 0;
+      padding: 0 20px;
+    }
 
-<body>
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: #ff0048;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
 
-<div class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="edu.html">Education</a></li>
-    <li><a href="tf.html">Track and Field</a></li>
-    <li><a href="exp.html">Experience</a></li>
-    <li><a href="skills.html">Skills and Hobbies</a></li>
-    <li><a href="https://www.linkedin.com/in/kirsten-kelly-b15238323/">LinkedIn</a></li>
-    <li><a href="INSERT PDF">Resume</a></li>
-  </ul>
-</div>
+    /* Table styling */
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 50px auto;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(17, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-</body>
+    .styled-table thead {
+      background-color: #00e1ff;
+      color: #f0f0f0;
+      text-align: left;
+    }
 
+    .styled-table th,
+    .styled-table td {
+      padding: 15px 20px;
+    }
+
+    .styled-table tbody tr {
+      background-color: #1a1b17;
+      border-bottom: 1px solid #000000;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .styled-table tbody tr:hover {
+      transform: scale(1.02);
+      background-color: #ffffff;
+    }
+
+    /* Links styling */
+    a {
+      color: #ff5722;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive table */
+    @media (max-width: 768px) {
+      .styled-table thead {
+        display: none;
+      }
+
+      .styled-table, .styled-table tbody, .styled-table tr, .styled-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .styled-table tr {
+        margin-bottom: 15px;
+      }
+
+      .styled-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      .styled-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 20px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  </style>
+
+  </head>
+  <body>
+    <h1>🎉 Hacktoberfest Portfolio Showcase</h1>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Portfolio</th>
+          <th>GitHub</th>
+          <th>LinkedIn</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Populated dynamically by contributors.js -->
+      </tbody>
+    </table>
+
+    <script src="src/assets/js/contributors.js"></script>
+
+    <script>
+    // Dynamic population enhancement
+    const contributors = [
+      {name: 'Sucheta Mondal', portfolio: 'https://portfolio.com', github: 'https://github.com/Suchetamon27', linkedin: 'http://www.linkedin.com/in/sucheta-mondal-a31821383'},
+      {name: 'John Doe', portfolio: 'https://johndoe.com', github: 'https://github.com/johndoe', linkedin: 'https://linkedin.com/in/johndoe'}
+    ];
+
+    const tableBody = document.getElementById('table-body');
+    contributors.forEach(c => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td data-label="Name">${c.name}</td>
+        <td data-label="Portfolio"><a href="${c.portfolio}" target="_blank">Visit</a></td>
+        <td data-label="GitHub"><a href="${c.github}" target="_blank">GitHub</a></td>
+        <td data-label="LinkedIn"><a href="${c.linkedin}" target="_blank">LinkedIn</a></td>
+      `;
+      tableBody.appendChild(row);
+    });
+  </script>
+
+  </body>
+</html>
