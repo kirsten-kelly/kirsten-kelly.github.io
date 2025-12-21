@@ -1,30 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Kirsten Kelly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Link your CSS file -->
-    <link rel="stylesheet" href="styles.css">
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95rem;
+            font-family: 'Arial', sans-serif;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+            min-height: 60vh;
+        }
+
+        #home {
+            margin-top: 60px;
+            text-align: center;
+            padding-top: 8rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 2rem auto;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #999;
+        }
+
+        .intro {
+            max-width: 700px;
+            margin: 2rem auto;
+            text-align: left;
+            font-size: 1.05rem;
+        }
+
+        .research-item, .teaching-item, .publication-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .publication-item {
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            color: #666;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .links {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .links a {
+            margin: 0 1rem;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            line-height: 2;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        ul.content-list {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        ul.content-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                padding: 0 1rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<div class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="edu.html">Education</a></li>
-    <li><a href="tf.html">Track and Field</a></li>
-    <li><a href="exp.html">Experience</a></li>
-    <li><a href="skills.html">Skills and Such</a></li>
-    <li><a href="https://www.linkedin.com/in/kirsten-kelly-gc/">LinkedIn</a></li>
-    <li><a href="INSERT PDF">Resume</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
-  </ul>
-</div>
+    <section id="home">
+        <div class="container">
+            <h1>Your Name</h1>
+            <p class="subtitle">Assistant Professor | Department of Your Field</p>
+            <div class="profile-img">📷</div>
+            <div class="links">
+                <a href="mailto:your.email@university.edu">Email</a>
+                <a href="cv.pdf">CV</a>
+                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="https://scholar.google.com">Google Scholar</a>
+            </div>
+        </div>
+    </section>
 
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="intro">
+                <p>Welcome! I am an Assistant Professor in the Department of [Your Field] at [Your University]. My research focuses on [your research area], with particular interest in [specific topics].</p>
+                
+                <p style="margin-top: 1rem;">I received my Ph.D. in [Field] from [University] in [Year], where I was advised by [Advisor Name]. Prior to that, I earned my B.A./B.S. in [Field] from [University].</p>
+                
+                <p style="margin-top: 1rem;">My work has been published in leading journals including [Journal Names], and I am passionate about [your interests/teaching philosophy].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2>Research</h2>
+            
+            <div class="research-item">
+                <h3>Research Area 1: [Topic Name]</h3>
+                <p>Description of your first major research area. Explain the questions you're investigating, methodologies you use, and why this work matters. Include any key findings or ongoing projects.</p>
+            </div>
+
+            <div class="research-item">
+                <h3>Research Area 2: [Topic Name]</h3>
+                <p>Description of your second research area. Highlight collaborative work, interdisciplinary approaches, or innovative methods you're employing in this domain.</p>
+            </div>
+
+            <div class="research-item">
+                <h3>Current Projects</h3>
+                <ul class="content-list">
+                    <li>Project title and brief description</li>
+                    <li>Another ongoing research project</li>
+                    <li>Collaborative work with [Institution/Researchers]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <div class="container">
+            <h2>Teaching</h2>
+            
+            <div class="teaching-item">
+                <h3>Current Courses</h3>
+                <p><strong>[Course Code]: Course Title</strong><br>
+                <span class="meta">Semester Year</span><br>
+                Brief description of the course content, level, and your approach to teaching it.</p>
+                
+                <p style="margin-top: 1rem;"><strong>[Course Code]: Another Course</strong><br>
+                <span class="meta">Semester Year</span><br>
+                Description of this course and what students will learn.</p>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Teaching Philosophy</h3>
+                <p>A brief statement about your approach to teaching, what you value in the classroom, and how you engage students with the material.</p>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Student Opportunities</h3>
+                <p>Information about research opportunities for students, advising, or how interested students can get involved with your work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            
+            <h3 style="margin-top: 0;">Journal Articles</h3>
+            
+            <div class="publication-item">
+                <p><strong>Your Name</strong>, Co-Author Name. (Year). "Article Title in Sentence Case." <em>Journal Name</em>, Volume(Issue), pages. <a href="#">[PDF]</a></p>
+            </div>
+
+            <div class="publication-item">
+                <p>Co-Author Name, <strong>Your Name</strong>, Another Author. (Year). "Another Article Title." <em>Journal Name</em>, Volume(Issue), pages. <a href="#">[Link]</a></p>
+            </div>
+
+            <h3>Working Papers</h3>
+            
+            <div class="publication-item">
+                <p><strong>Your Name</strong>. "Working Paper Title." <span class="meta">Under review</span> <a href="#">[PDF]</a></p>
+            </div>
+
+            <h3>Conference Presentations</h3>
+            
+            <div class="publication-item">
+                <p>"Presentation Title." Conference Name, Location, Year.</p>
+            </div>
+
+            <div class="publication-item">
+                <p>"Another Presentation." Conference Name, Location, Year.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+                <p><strong>Office:</strong> Building Name, Room 123</p>
+                <p><strong>Department:</strong> Department of [Your Field]</p>
+                <p><strong>Institution:</strong> Your University<br>
+                123 University Drive<br>
+                City, State ZIP</p>
+                <p style="margin-top: 1rem;"><strong>Office Hours:</strong> By appointment</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Last updated: December 2024</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-
-
-<h1 style="font-family: Arial;">Kirsten Kelly</h1>
-
-<h3 style="font-family: Arial;">About Me</h3>
-<body style="font-family: Arial; margin-left: 1in; margin-right: 1in;">Hi! I'm Kirsten, a first-year student at Grinnell College studying<br> Political Science and Economics originally from the Chicago area.<br> Welcome to my website! :) </body>
+</html>
