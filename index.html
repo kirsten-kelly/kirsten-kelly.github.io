@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Portfolio</title>
+    <title>Kirsten K - Grinnell College</title>
     <style>
         * {
             margin: 0;
@@ -112,29 +113,89 @@
             font-size: 1.05rem;
         }
 
-        .research-item, .teaching-item, .publication-item {
-            margin-bottom: 2.5rem;
+        .tf-photo {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: 2rem auto;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #999;
+            border-radius: 8px;
         }
 
-        .publication-item {
-            margin-bottom: 2rem;
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
 
-        .meta {
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0066cc;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
             color: #666;
-            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .semester-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .semester-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #0066cc;
+        }
+
+        .course-item {
+            margin-bottom: 0.8rem;
             font-size: 0.95rem;
+        }
+
+        .course-code {
+            font-weight: 600;
+            color: #333;
         }
 
         .links {
             margin-top: 2rem;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
         .links a {
-            margin: 0 1rem;
             color: #0066cc;
             text-decoration: none;
+            font-size: 1rem;
         }
 
         .links a:hover {
@@ -143,6 +204,7 @@
 
         .contact-info {
             line-height: 2;
+            font-size: 1.05rem;
         }
 
         .contact-info a {
@@ -173,6 +235,46 @@
             margin-bottom: 0.5rem;
         }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .skill-category {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #0066cc;
+        }
+
+        .experience-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .experience-org {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -190,6 +292,10 @@
             section {
                 padding: 3rem 0;
             }
+
+            .stats-grid, .course-grid, .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -198,23 +304,29 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#track-field">Track & Field</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills & Accolades</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <div class="container">
-            <h1>Your Name</h1>
-            <p class="subtitle">Assistant Professor | Department of Your Field</p>
+            <h1>Kirsten K</h1>
+            <p class="subtitle">Student-Athlete | Grinnell College</p>
             <div class="profile-img">📷</div>
             <div class="links">
-                <a href="mailto:your.email@university.edu">Email</a>
-                <a href="cv.pdf">CV</a>
-                <a href="https://github.com/yourusername">GitHub</a>
-                <a href="https://scholar.google.com">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@grinnell.edu">Email</a>
+                <a href="tel:+1234567890">Phone</a>
+                <a href="resume.pdf">Resume/CV</a>
+            </div>
+            <div class="contact-info" style="margin-top: 2rem;">
+                <p>Grinnell College<br>
+                1115 8th Avenue<br>
+                Grinnell, IA 50112</p>
             </div>
         </div>
     </section>
@@ -223,116 +335,193 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="intro">
-                <p>Welcome! I am an Assistant Professor in the Department of [Your Field] at [Your University]. My research focuses on [your research area], with particular interest in [specific topics].</p>
+                <p><strong>Hi!</strong></p>
                 
-                <p style="margin-top: 1rem;">I received my Ph.D. in [Field] from [University] in [Year], where I was advised by [Advisor Name]. Prior to that, I earned my B.A./B.S. in [Field] from [University].</p>
+                <p style="margin-top: 1rem;">I'm Kirsten, a student-athlete at Grinnell College pursuing dual majors in Economics and Political Science. I'm passionate about combining analytical thinking with an understanding of political systems to make meaningful contributions to society.</p>
                 
-                <p style="margin-top: 1rem;">My work has been published in leading journals including [Journal Names], and I am passionate about [your interests/teaching philosophy].</p>
+                <p style="margin-top: 1rem;">As a member of the Grinnell College Track and Field team, I compete in high jump and sprints, balancing the demands of Division III athletics with rigorous academic coursework. This experience has taught me discipline, time management, and the importance of teamwork.</p>
+                
+                <p style="margin-top: 1rem;">Beyond academics and athletics, I'm committed to lifelong learning and giving back to my community through various service opportunities and leadership roles.</p>
             </div>
         </div>
     </section>
 
-    <section id="research">
+    <section id="track-field">
         <div class="container">
-            <h2>Research</h2>
+            <h2>Track & Field</h2>
             
-            <div class="research-item">
-                <h3>Research Area 1: [Topic Name]</h3>
-                <p>Description of your first major research area. Explain the questions you're investigating, methodologies you use, and why this work matters. Include any key findings or ongoing projects.</p>
+            <div class="tf-photo">🏃‍♀️</div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">High Jump</div>
+                    <div class="stat-label">Primary Event</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">Sprints</div>
+                    <div class="stat-label">Secondary Event</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5'8" / 1.72m</div>
+                    <div class="stat-label">Height</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1.57m</div>
+                    <div class="stat-label">High Jump PR</div>
+                </div>
             </div>
 
-            <div class="research-item">
-                <h3>Research Area 2: [Topic Name]</h3>
-                <p>Description of your second research area. Highlight collaborative work, interdisciplinary approaches, or innovative methods you're employing in this domain.</p>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="https://athletics.grinnell.edu" target="_blank" style="color: #0066cc; text-decoration: none; font-size: 1.1rem;">View Athletic Profile →</a>
             </div>
 
-            <div class="research-item">
-                <h3>Current Projects</h3>
-                <ul class="content-list">
-                    <li>Project title and brief description</li>
-                    <li>Another ongoing research project</li>
-                    <li>Collaborative work with [Institution/Researchers]</li>
+            <h3>Accolades</h3>
+            <ul class="content-list">
+                <li>Conference recognition (add specific achievements)</li>
+                <li>Personal records and improvements</li>
+                <li>Team contributions and leadership roles</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3 style="margin-top: 0;">Grinnell College</h3>
+                <p class="subtitle" style="margin-bottom: 0.5rem;">Class of 2029</p>
+                <p><strong>Double Major:</strong> Economics and Political Science</p>
+                <p style="margin-top: 0.5rem;"><strong>GPA:</strong> [Your GPA]</p>
+            </div>
+
+            <h3>Coursework by Semester</h3>
+            
+            <div class="course-grid">
+                <div class="semester-card">
+                    <h4>Fall 2025</h4>
+                    <div class="course-item">
+                        <span class="course-code">TUT-101:</span> Tutorial: Language in Thought and Action
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">POL-111:</span> Intro to Political Science
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">PHI-102:</span> Symbolic Logic
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">STA-209:</span> Applied Statistics
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h4>Spring 2026</h4>
+                    <div class="course-item">
+                        <span class="course-code">ECN-111:</span> Intro to Economics
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">MAT-133:</span> Calculus 2 and Multivariable Calculus
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">POL-295:</span> ST: War in Ukraine
+                    </div>
+                    <div class="course-item">
+                        <span class="course-code">POL-239:</span> The Presidency
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Test Scores</h3>
+            <p>[Add your SAT/ACT scores if you'd like to include them]</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-title">[Job Title/Position]</div>
+                <div class="experience-org">[Organization] | [Dates]</div>
+                <p>Description of your responsibilities, achievements, and what you learned from this role.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">[Another Position]</div>
+                <div class="experience-org">[Organization] | [Dates]</div>
+                <p>Description of your work, key projects, and impact you made in this position.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">[Leadership Role]</div>
+                <div class="experience-org">[Organization] | [Dates]</div>
+                <p>Details about your leadership experience and contributions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Accolades</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <ul class="content-list">
+                        <li>Illinois State Seal of Biliteracy Commendation in French</li>
+                        <li>Proficiency in Polish</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Certifications</h4>
+                    <ul class="content-list">
+                        <li>CPR/AED/First-Aid Certified</li>
+                        <li>Lifeguard Certified</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Coding Languages</h4>
+                    <ul class="content-list">
+                        <li>R</li>
+                        <li>HTML</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Honors & Awards</h4>
+                    <ul class="content-list">
+                        <li>3-time recipient of STARguard 5-star award</li>
+                        <li>National Honors Society</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies & Interests</h2>
+            <div class="intro">
+                <p>Outside of academics and athletics, I enjoy:</p>
+                
+                <ul class="content-list" style="margin-top: 1rem;">
+                    <li>[Hobby/Interest 1] - brief description</li>
+                    <li>[Hobby/Interest 2] - brief description</li>
+                    <li>[Hobby/Interest 3] - brief description</li>
+                    <li>[Hobby/Interest 4] - brief description</li>
                 </ul>
-            </div>
-        </div>
-    </section>
 
-    <section id="teaching">
-        <div class="container">
-            <h2>Teaching</h2>
-            
-            <div class="teaching-item">
-                <h3>Current Courses</h3>
-                <p><strong>[Course Code]: Course Title</strong><br>
-                <span class="meta">Semester Year</span><br>
-                Brief description of the course content, level, and your approach to teaching it.</p>
-                
-                <p style="margin-top: 1rem;"><strong>[Course Code]: Another Course</strong><br>
-                <span class="meta">Semester Year</span><br>
-                Description of this course and what students will learn.</p>
-            </div>
-
-            <div class="teaching-item">
-                <h3>Teaching Philosophy</h3>
-                <p>A brief statement about your approach to teaching, what you value in the classroom, and how you engage students with the material.</p>
-            </div>
-
-            <div class="teaching-item">
-                <h3>Student Opportunities</h3>
-                <p>Information about research opportunities for students, advising, or how interested students can get involved with your work.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            
-            <h3 style="margin-top: 0;">Journal Articles</h3>
-            
-            <div class="publication-item">
-                <p><strong>Your Name</strong>, Co-Author Name. (Year). "Article Title in Sentence Case." <em>Journal Name</em>, Volume(Issue), pages. <a href="#">[PDF]</a></p>
-            </div>
-
-            <div class="publication-item">
-                <p>Co-Author Name, <strong>Your Name</strong>, Another Author. (Year). "Another Article Title." <em>Journal Name</em>, Volume(Issue), pages. <a href="#">[Link]</a></p>
-            </div>
-
-            <h3>Working Papers</h3>
-            
-            <div class="publication-item">
-                <p><strong>Your Name</strong>. "Working Paper Title." <span class="meta">Under review</span> <a href="#">[PDF]</a></p>
-            </div>
-
-            <h3>Conference Presentations</h3>
-            
-            <div class="publication-item">
-                <p>"Presentation Title." Conference Name, Location, Year.</p>
-            </div>
-
-            <div class="publication-item">
-                <p>"Another Presentation." Conference Name, Location, Year.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-                <p><strong>Office:</strong> Building Name, Room 123</p>
-                <p><strong>Department:</strong> Department of [Your Field]</p>
-                <p><strong>Institution:</strong> Your University<br>
-                123 University Drive<br>
-                City, State ZIP</p>
-                <p style="margin-top: 1rem;"><strong>Office Hours:</strong> By appointment</p>
+                <p style="margin-top: 1.5rem;">These activities help me maintain balance, develop new skills, and connect with people who share similar passions.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Kirsten K. All rights reserved.</p>
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">Last updated: December 2024</p>
     </footer>
 
