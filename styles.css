@@ -54,3 +54,68 @@ h1 {
 h2 {
   margin-top: 30px;
 }
+
+/* -------------------------
+   Global Styling
+------------------------- */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* -------------------------
+   Page Content
+------------------------- */
+.content {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+/* Section spacing (academic look) */
+.section {
+  margin-bottom: 50px;
+}
+
+/* Headings */
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  margin-top: 25px;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+/* Subtitles (dates, majors) */
+.subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: -5px;
+}
+
+/* Lists */
+.content ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* Subtle academic spacing */
+.content p {
+  margin: 6px 0;
+}
