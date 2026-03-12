@@ -596,6 +596,14 @@
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">Last updated: December 2025</p>
     </footer>
 
+    <!-- Email Popup -->
+    <div class="popup-overlay" id="email-overlay" onclick="closeEmailPopup()"></div>
+    <div class="email-popup" id="email-popup">
+        <h3>Get in Touch</h3>
+        <p>kirstenkdebate@gmail.com</p>
+        <button onclick="closeEmailPopup()">Close</button>
+    </div>
+    
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -612,3 +620,4 @@
     </script>
 </body>
 </html>
+
