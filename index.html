@@ -48,7 +48,6 @@
             color: #666;
         }
 
-        /* Bold Home link in nav */
         nav a[href="#home"] {
             font-weight: bold;
         }
@@ -188,7 +187,6 @@
             flex-wrap: wrap;
         }
 
-        /* Button styles for LinkedIn, Email, Resume */
         .links a {
             display: inline-block;
             padding: 0.6rem 1.4rem;
@@ -267,12 +265,12 @@
         }
 
         .experience-item:last-child {
-    border-bottom: none;
-}
+            border-bottom: none;
+        }
 
-.update-entry {
-    margin-bottom: 3rem;
-}
+        .update-entry {
+            margin-bottom: 3rem;
+        }
 
         .experience-title {
             font-weight: 600;
@@ -283,6 +281,40 @@
             color: #666;
             font-style: italic;
             margin-bottom: 0.5rem;
+        }
+
+        .project-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-family: 'Arial', sans-serif;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.6rem;
+            vertical-align: middle;
+        }
+
+        .badge-live {
+            background-color: #e6f4ea;
+            color: #1e7a34;
+        }
+
+        .badge-planned {
+            background-color: #f0f0f0;
+            color: #777;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #0066cc;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
         }
 
         /* Email popup styles */
@@ -387,7 +419,7 @@
     <section id="home">
         <div class="container">
             <h1>Kirsten Kelly</h1>
-            <p class="subtitle">Political Science & Economics @ Grinnell | NCAA Track Athlete</p>
+            <p class="subtitle">Economics & Political Science @ Grinnell | NCAA Track Athlete</p>
             <img src="ProfileIMG.jpg" alt="Kirsten Kelly" class="profile-img">
             <div class="links">
                 <a href="https://www.linkedin.com/in/kirsten-kelly-gc/" target="_blank">LinkedIn</a>
@@ -404,14 +436,14 @@
             <h2>About Me</h2>
             <div class="intro">
                 <p><strong>Hi!</strong></p>
-                
-                <p style="margin-top: 1rem;">I'm Kirsten, a student-athlete at Grinnell College pursuing dual majors in Economics and Political Science. I'm passionate about combining analytical thinking with an understanding of political systems to make meaningful contributions to society.</p>
-                
-                <p style="margin-top: 1rem;">As a member of the Grinnell College Track and Field team, I compete in high jump and sprints, balancing the demands of Division III athletics with rigorous academic coursework. This experience has taught me discipline, time management, and the importance of teamwork.</p>
-                
-                <p style="margin-top: 1rem;">This past summer, I interned at JC & SON Capital, a Chicago-based options trading firm, where I built hands-on experience in derivatives markets and options strategies. I'm also a Fellow in Grinnell's Finance Career Accelerator, preparing for a career in investment banking.</p>
 
-                 <p style="margin-top: 1rem;">Beyond academics and athletics, I'm committed to lifelong learning and giving back to my community through various service opportunities and leadership roles.</p>
+                <p style="margin-top: 1rem;">I'm Kirsten, a student-athlete at Grinnell College pursuing dual majors in Economics and Political Science, with a growing focus on investment banking and finance recruiting.</p>
+
+                <p style="margin-top: 1rem;">As a member of the Grinnell College Track and Field team, I compete in high jump, placing 4th at Midwest Conference championships both indoors and outdoors and ranking #119 nationally in NCAA DIII, while balancing 20+ hours of weekly training with a 3.918 GPA.</p>
+
+                <p style="margin-top: 1rem;">This past summer, I interned at JC & SON Capital, a Chicago-based options trading firm, where I built hands-on experience managing simulated options positions and briefing a supervising trader on market conditions. I'm also 1 of 12 students selected for Grinnell's Finance Career Accelerator, preparing for a career in investment banking.</p>
+
+                <p style="margin-top: 1rem;">Beyond academics and athletics, I serve as a Community Advisor supporting 15 residents on my floor, research private equity's role in healthcare, and I'm committed to giving back through tutoring and volunteer work.</p>
 
                 <p style="margin-top: 1rem;">Email me at kellykir@grinnell.edu!</p>
             </div>
@@ -421,16 +453,16 @@
     <section id="education">
         <div class="container">
             <h2>Education</h2>
-            
+
             <div style="text-align: center; margin-bottom: 3rem;">
                 <h3 style="margin-top: 0;">Grinnell College</h3>
                 <p class="subtitle" style="margin-bottom: 0.5rem;">Class of 2029</p>
                 <p><strong>Majors:</strong> Economics and Political Science</p>
-                <p style="margin-top: 0.5rem;"><strong>GPA:</strong>3.9/4.0</p>
+                <p style="margin-top: 0.5rem;"><strong>GPA:</strong> 3.918/4.00 | Founder's Scholar | Dean's List Honoree</p>
             </div>
 
             <h3>Coursework by Semester</h3>
-            
+
             <div class="course-grid">
                 <div class="semester-card">
                     <h4>Fall 2026</h4>
@@ -450,7 +482,7 @@
                         <span class="course-code">ALS-101:</span> Alternate Language Study: Polish
                     </div>
                 </div>
-                    
+
                 <div class="semester-card">
                     <h4>Spring 2026</h4>
                     <div class="course-item">
@@ -466,7 +498,7 @@
                         <span class="course-code">POL-239:</span> The Presidency
                     </div>
                 </div>
-                    
+
                 <div class="semester-card">
                     <h4>Fall 2025</h4>
                     <div class="course-item">
@@ -482,15 +514,12 @@
                         <span class="course-code">STA-209:</span> Applied Statistics
                     </div>
                 </div>
-
-                </div>
-
             </div>
+
             <div style="text-align: center; margin-bottom: 3rem;">
                 <h3 style="margin-top: 0;">Glenbrook North High School</h3>
                 <p class="subtitle" style="margin-bottom: 0.5rem;">Class of 2025</p>
             </div>
-
         </div>
     </section>
 
@@ -498,12 +527,12 @@
         <div class="container">
             <h2>Campus Activities</h2>
 
-             <div class="experience-item">
+            <div class="experience-item">
                 <div class="experience-title">Map the System Researcher</div>
                 <div class="experience-org">Jan 2026 - Present</div>
-                <p>Selected to participate in Grinnell’s Map the System initiative, researching private equity ownership in Iowa’s healthcare sector. Evaluating capital structures, acquisition patterns, and regulatory implications to analyze how financial incentives shape healthcare delivery and community outcomes.</p>
+                <p>Researching private equity ownership in Iowa's healthcare sector 5-10 hours weekly, evaluating capital structures, acquisition patterns, and regulatory implications through academic and industry literature. Presented findings to an audience of 100+ faculty and peers via a formal research deck and paper, translating complex financial and regulatory concepts for a non-specialist audience.</p>
             </div>
-            
+
             <div class="experience-item">
                 <div class="experience-title">Debate Union</div>
                 <div class="experience-org">Sept 2025 - Present</div>
@@ -521,134 +550,153 @@
     <section id="experience">
         <div class="container">
             <h2>Professional Experience</h2>
-            
+
             <div class="experience-item">
                 <div class="experience-title">Options Trading Intern</div>
                 <div class="experience-org">JC & SON Capital | May 2026 - Aug 2026</div>
-                <p>Shadowed live options trading across tech and other sectors at a specialized Chicago day trading firm, observing real-time application of premium-selling strategies — iron condors, short strangles, vertical spreads — at elevated implied volatility. Applied the Greeks (delta, theta, vega) to structure and manage simulated trades on a demo account, translating classroom options pricing theory into practical risk management.</p>
+                <p>Managed simulated options positions daily across a 12-week internship, applying delta, theta, and vega to size trades from no prior background and building a 40+ position paper-trading book. Collaborated with my supervising trader on daily trade rationale across live and paper portfolios, contributing independent trade ideas that supported an 80% win rate on trades I was involved with. Delivered 10 weekly market briefings on earnings releases and geopolitical catalysts, one of which flagged risk that directly informed my supervisor's decision to exit a live position early.</p>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">Finance Fellow</div>
                 <div class="experience-org">Grinnell Finance Career Accelerator | April 2026 - Present</div>
-                <p>Selected as 1 of 12 students for Grinnell's Finance Career Accelerator, a competitive program preparing fellows for investment banking, private equity, and asset management recruiting. Building technical fluency in DCF, LBO, M&A, and comparable company analysis through hands-on modeling training, plus a New York finance immersion experience.</p>
+                <p>Selected as 1 of 12 students for Grinnell's Finance Career Accelerator, a competitive program preparing fellows for investment banking, private equity, and asset management recruiting. Completed 4 Wall Street Prep certifications in accounting, Excel, corporate finance, and financial-report analysis, building technical proficiency in DCF, LBO, M&A, and comparable company analysis.</p>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">Consulting Fellow</div>
                 <div class="experience-org">Possible Consulting Career Accelerator | March 2026 - May 2026</div>
-                <p>Selected for a competitive consulting accelerator on a full scholarship, developing case interview frameworks through mock casing and mentorship from consulting professionals. Sharpened structured problem-solving and client-facing communication across market sizing, profitability analysis, and business strategy cases.</p>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-title">Pioneer Capitol Investments</div>
-                <div class="experience-org">Grinnell College Student Endowment Fund | Oct 2025 - Present</div>
-                <p>As an analyst for Grinnell's student-run investment fund, I manage and analyze portfolio decisions for a $380,000 fund. I present market trends, financial statements, and investment recommendations to peers, developing practical financial analysis and communication skills.</p>
+                <p>Chosen for a national consulting accelerator on a full scholarship, completing 5 mock case interviews over 5-10 hours weekly and applying frameworks for market sizing, profitability, and business strategy. Earned a perfect score on my client-facing pitch deck for a mock case, translating structured problem-solving into a polished business recommendation.</p>
             </div>
 
             <div class="experience-item">
-                <div class="experience-title">Community Advisor (RA)</div>
-                <div class="experience-org">Grinnell College | Aug 2026 - Present</div>
-                <p>Selected to serve as a Community Advisor for the 2026–2027 academic year, supporting residents and helping build an inclusive, well-functioning residential community. Looking forward to developing the leadership and conflict-resolution skills that come with managing a floor of peers.</p>
-            </div>
-            
-              <div class="experience-item">
                 <div class="experience-title">Athletic Event Staff</div>
                 <div class="experience-org">Grinnell College | Jan 2026 - May 2026</div>
                 <p>I support the coordination and execution of collegiate athletic events at Grinnell College, assisting with event logistics to ensure smooth and organized competitions. This role has strengthened my ability to work effectively within a team, communicate clearly under time constraints, and contribute to a positive experience for student-athletes and attendees alike.</p>
             </div>
-            
+
             <div class="experience-item">
-                <div class="experience-title">Tutor</div>
-                <div class="experience-org">Self-Employed | Aug 2022 - Present</div>
-                <p>I provide personalized academic support to high school students across mathematics, writing, reading, and standardized test preparation. Through diagnostic assessments and customized lesson plans, I help students bridge skill gaps and achieve their academic goals.</p>
+                <div class="experience-title">Analyst</div>
+                <div class="experience-org">Grinnell College Student Endowment Fund (Pioneer Capital Investments) | Nov 2025 - Present</div>
+                <p>Contribute equity research and financial-statement analysis supporting portfolio decisions for our $380,000 student-run fund. Apply macroeconomic and Federal Reserve policy analysis to sector allocation, supporting a decision to exit a position based on my recommendation.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Community Advisor (CA)</div>
+                <div class="experience-org">Grinnell College Residence Life | Aug 2025 - Present</div>
+                <p>Support a floor of 15 upperclassmen students, balancing weekly community-building programming, including a recurring Sunday night tea, with day-to-day support, conflict resolution, and crisis response for residents. Plan and run 2 larger floor events per semester on a $135 budget on top of ongoing weekly programming.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Independent Volleyball Coach</div>
+                <div class="experience-org">Self-Employed | 2024 - 2025</div>
+                <p>Coached 4-6 athletes in private volleyball lessons over about a year, delivering technique-focused instruction and building customized training plans around each athlete's skill level and goals. Designed drills and progression targeting fundamentals, adapting instruction as each athlete developed.</p>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">Lifeguard</div>
-                <div class="experience-org">Northbrook Park District | Summers 2024, 2025, 2026</div>
-                <p>I ensure patron safety at municipal pool facilities through vigilant surveillance and enforcement of water safety protocols. This role has strengthened my ability to work collaboratively under pressure while maintaining composure in emergency situations.</p>
+                <div class="experience-org">Northbrook Park District — Meadowhill Aquatic Center & Sports Center | Summer 2024 - Present</div>
+                <p>Rated a 5-star lifeguard on 3 separate audits, reflecting consistent adherence to safety and surveillance standards. Supervised pool safety for a facility serving up to 800 patrons, working roughly 30 hours weekly during peak summer seasons while maintaining active certification in CPR/AED, First Aid, and StarGuard Lifeguard across 3 consecutive summers.</p>
             </div>
 
             <div class="experience-item">
-                <div class="experience-title">Volleyball Coach</div>
-                <div class="experience-org">Self-Employed | Aug 2023 - May 2025</div>
-                <p>I independently operate a private volleyball coaching business, providing tailored instruction to middle and high school athletes. By designing customized training sessions, I help athletes develop fundamental skills, refine technique, and build competitive confidence.</p>
+                <div class="experience-title">Independent SAT/ACT/PSAT Tutor</div>
+                <div class="experience-org">Self-Employed | 2022 - Present</div>
+                <p>I've spent the past 4 years tutoring students independently, starting with general math support and evolving into a focus on standardized test prep. Tutored 4+ students individually in 1-2 weekly sessions each, building customized study plans and an extensive library of practice materials and progress-tracking systems around each student's target scores and timeline.</p>
             </div>
         </div>
     </section>
-<section id="finance-toolkit">
-    <div class="container">
-        <h2>Finance Toolkit</h2>
 
-   <h3>Certifications</h3>
-<div class="skills-grid">
-    <div class="skill-category">
-        <h4>Wall Street Prep</h4>
-        <ul class="content-list">
-            <li><a href="http://certification.wallstreetprep.com/796d6716-f9f2-4cb8-8d82-0ea8fefd322c#acc.dtrXo0kZ" target="_blank">Accounting Crash Course</a> — Completed</li>
-            <li><a href="http://certification.wallstreetprep.com/bf20178e-2a7f-43d6-b0d5-5d7b2247e6a8#acc.d0UKSJfG" target="_blank">Excel Crash Course</a> — Completed</li>
-            <li><a href="http://certification.wallstreetprep.com/45cc8f7d-c5f5-4ab0-96bb-f2d974b0228f#acc.PubtYqwV" target="_blank">Corporate Finance</a> — Completed</li>
-            <li><a href="http://certification.wallstreetprep.com/d70afeb8-5eaf-481b-a7e1-6994f8adf2b7#acc.Gb74Jh3U" target="_blank">Analyzing Financial Reports</a> — Completed</li>
-            <li>Financial Modeling and Valuation — In Progress</li>
-        </ul>
-    </div>
-</div>
+    <section id="finance-toolkit">
+        <div class="container">
+            <h2>Finance Toolkit</h2>
 
-        <h3>Currently Studying</h3>
-        <div class="experience-item">
-            <div class="experience-title">FINRA SIE Exam</div>
-            <div class="experience-org">In Progress</div>
-            <p>Preparing for the Securities Industry Essentials exam, covering basic securities industry knowledge including regulatory structure, products, and industry practices required for entry into the field.</p>
+            <h3>Certifications</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Wall Street Prep</h4>
+                    <ul class="content-list">
+                        <li><a href="http://certification.wallstreetprep.com/796d6716-f9f2-4cb8-8d82-0ea8fefd322c#acc.dtrXo0kZ" target="_blank">Accounting Crash Course</a> — Completed</li>
+                        <li><a href="http://certification.wallstreetprep.com/bf20178e-2a7f-43d6-b0d5-5d7b2247e6a8#acc.d0UKSJfG" target="_blank">Excel Crash Course</a> — Completed</li>
+                        <li><a href="http://certification.wallstreetprep.com/45cc8f7d-c5f5-4ab0-96bb-f2d974b0228f#acc.PubtYqwV" target="_blank">Corporate Finance</a> — Completed</li>
+                        <li><a href="http://certification.wallstreetprep.com/d70afeb8-5eaf-481b-a7e1-6994f8adf2b7#acc.Gb74Jh3U" target="_blank">Analyzing Financial Reports</a> — Completed</li>
+                        <li>Financial Modeling and Valuation — In Progress</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Currently Studying</h3>
+            <div class="experience-item">
+                <div class="experience-title">FINRA SIE Exam</div>
+                <div class="experience-org">In Progress</div>
+                <p>Preparing for the Securities Industry Essentials exam, covering basic securities industry knowledge including regulatory structure, products, and industry practices required for entry into the field.</p>
+            </div>
+
+            <h3>Projects</h3>
+
+            <div class="experience-item">
+                <div class="experience-title">Private Equity in Healthcare Research Paper<span class="project-badge badge-live">Live</span></div>
+                <div class="experience-org">Grinnell Map the System | Jan 2026 - Present</div>
+                <p>Researched private equity ownership in Iowa's healthcare sector, evaluating capital structures, acquisition patterns, and regulatory implications through academic and industry literature. Presented findings to an audience of 100+ faculty and peers via a formal research deck and written paper.</p>
+                <a href="PE-Healthcare-Research-Paper.pdf" class="project-link" target="_blank">View Research Paper →</a>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Consulting Case Pitch Deck<span class="project-badge badge-live">Live</span></div>
+                <div class="experience-org">Possible Consulting Career Accelerator | March 2026 - May 2026</div>
+                <p>Client-facing pitch deck built for a mock case during the Possible Consulting Career Accelerator, translating structured problem-solving into a polished business recommendation. Earned a perfect score from program mentors.</p>
+                <a href="Consulting-Case-Deck.pdf" class="project-link" target="_blank">View Slide Deck →</a>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">DCF Valuation Model<span class="project-badge badge-planned">Coming Soon</span></div>
+                <div class="experience-org">Independent Project</div>
+                <p>Planned discounted cash flow model on a public company, applying Wall Street Prep training to build out revenue projections, WACC assumptions, and a sensitized valuation range.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">LBO Model<span class="project-badge badge-planned">Coming Soon</span></div>
+                <div class="experience-org">Independent Project</div>
+                <p>Planned leveraged buyout model on a mid-cap target, applying WSP corporate finance training to structure a debt schedule, returns analysis, and exit assumptions.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">FINRA SIE Exam Completion<span class="project-badge badge-planned">Coming Soon</span></div>
+                <div class="experience-org">Independent Certification</div>
+                <p>Currently preparing for the Securities Industry Essentials exam, targeting completion late this year.</p>
+            </div>
         </div>
+    </section>
 
-        <h3>Projects</h3>
-        <div class="experience-item">
-            <div class="experience-title">Private Equity in Healthcare Research</div>
-            <div class="experience-org">Grinnell Map the System | Jan 2026 - Present</div>
-            <p>Researching private equity ownership in Iowa's healthcare sector, evaluating capital structures, acquisition patterns, and regulatory implications. Presented findings to faculty and peers.</p>
-        </div>
-    </div>
-</section>
-    
     <section id="updates">
         <div class="container">
             <h2>Updates</h2>
             <div class="intro">
                 <div class="update-entry">
                     <p><strong>05/29 Update:</strong></p>
-                
                     <p style="margin-top: 1rem;">Excited to announce that I have started my summer internship at JC & SON Capital, a Chicago-based options trading firm specializing in derivatives markets. I am building hands-on experience in live options markets, applying strategies including vertical spreads, iron condors, and short strangles while deepening my understanding of the Greeks and premium-selling frameworks. Grateful for the opportunity to bridge classroom finance theory with real-world trading dynamics this summer.</p>
-            
                 </div>
-                
+
                 <div class="update-entry">
                     <p><strong>05/02 Update:</strong></p>
-                
                     <p style="margin-top: 1rem;">Excited to share that I have completed the Possible Consulting Career Accelerator. Over the course of the program, I developed structured problem-solving and case interview skills through mock casing sessions and direct mentorship from consulting professionals, earning a certificate of completion. Grateful for the experience and the incredible cohort I got to learn alongside.</p>
-            
                 </div>
-                
-                 <div class="update-entry">
+
+                <div class="update-entry">
                     <p><strong>04/15 Update:</strong></p>
-                
                     <p style="margin-top: 1rem;">Thrilled to share that I have been selected as one of 12 students for Grinnell College's Finance Career Accelerator, a competitive program preparing fellows for careers in investment banking, private equity, and asset management. The program includes hands-on financial modeling training in DCF, LBO, M&A, and comparable company analysis, as well as a New York finance immersion experience. Looking forward to everything ahead.</p>
-            
                 </div>
+
                 <div class="update-entry">
                     <p><strong>03/13 Update:</strong></p>
-                
-                    <p style="margin-top: 1rem;">I’m excited to share that I’ve been accepted into the Possible Consulting Career Cohort on a full-ride scholarship. The program is designed to prepare students for careers in consulting through case interview training, structured problem solving, and mentorship. I’m especially excited that the program has strong connections with Boston Consulting Group (BCG). Looking forward to building new skills and learning from an incredible community of peers and mentors.</p>
-                
-                    <p style="margin-top: 1rem;">I’m also excited to share that I’ve been selected by Grinnell College to serve as a Community Advisor (CA) for the 2026–2027 academic year. Community Advisors play an important role in supporting residents, fostering inclusive communities, and helping create a positive residential experience on campus. I’m grateful for the opportunity and look forward to contributing to the Grinnell community in this leadership role.</p>
+                    <p style="margin-top: 1rem;">I'm excited to share that I've been accepted into the Possible Consulting Career Cohort on a full-ride scholarship. The program is designed to prepare students for careers in consulting through case interview training, structured problem solving, and mentorship. I'm especially excited that the program has strong connections with Boston Consulting Group (BCG). Looking forward to building new skills and learning from an incredible community of peers and mentors.</p>
+                    <p style="margin-top: 1rem;">I'm also excited to share that I've been selected by Grinnell College to serve as a Community Advisor (CA) for the 2026-2027 academic year. Community Advisors play an important role in supporting residents, fostering inclusive communities, and helping create a positive residential experience on campus. I'm grateful for the opportunity and look forward to contributing to the Grinnell community in this leadership role.</p>
                 </div>
+
                 <div class="update-entry">
                     <p><strong>01/10 Update:</strong></p>
-                
-                    <p style="margin-top: 1rem;">I’m excited to share that HB3773, a bill related to a proposal I presented at Illinois Youth and Government in 2024 and later discussed with State Representative Jennifer Gong-Gershowitz, has officially gone into effect as of January 1, 2026. The law updates the Illinois Human Rights Act to regulate the use of artificial intelligence in employment decisions, requiring transparency and prohibiting AI tools that lead to discrimination in hiring, promotion, or other workplace decisions.
-
-It’s incredibly meaningful to see an idea discussed through civic engagement programs translate into real public policy. Experiences like Youth and Government continue to reinforce my interest in the intersection of policy, technology, and economic opportunity.</p>
-            
+                    <p style="margin-top: 1rem;">I'm excited to share that HB3773, a bill related to a proposal I presented at Illinois Youth and Government in 2024 and later discussed with State Representative Jennifer Gong-Gershowitz, has officially gone into effect as of January 1, 2026. The law updates the Illinois Human Rights Act to regulate the use of artificial intelligence in employment decisions, requiring transparency and prohibiting AI tools that lead to discrimination in hiring, promotion, or other workplace decisions.</p>
+                    <p style="margin-top: 1rem;">It's incredibly meaningful to see an idea discussed through civic engagement programs translate into real public policy. Experiences like Youth and Government continue to reinforce my interest in the intersection of policy, technology, and economic opportunity.</p>
                 </div>
             </div>
         </div>
@@ -657,13 +705,13 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
     <section id="skills">
         <div class="container">
             <h2>Skills & Accolades</h2>
-            
+
             <div class="skills-grid">
                 <div class="skill-category">
                     <h4>Languages</h4>
                     <ul class="content-list">
                         <li>Illinois State Seal of Biliteracy Commendation in French</li>
-                        <li>Proficiency in Polish</li>
+                        <li>Conversational Polish</li>
                     </ul>
                 </div>
 
@@ -671,25 +719,27 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
                     <h4>Certifications</h4>
                     <ul class="content-list">
                         <li>CPR/AED/First-Aid Certified</li>
-                        <li>Lifeguard Certified</li>
+                        <li>StarGuard Lifeguard Certified</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <h4>Technical</h4>
                     <ul class="content-list">
+                        <li>Excel</li>
                         <li>R</li>
                         <li>HTML</li>
-                        <li>SSRS</li>
-                        <li>Excel</li>
+                        <li>SQL Server Reporting Services (SSRS)</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <h4>Honors & Awards</h4>
                     <ul class="content-list">
-                        <li>3-time recipient of STARguard 5-star award</li>
-                        <li>National Honors Society</li>
+                        <li>Founder's Scholar</li>
+                        <li>Dean's List Honoree</li>
+                        <li>3-time recipient of StarGuard 5-star award</li>
+                        <li>National Honor Society</li>
                     </ul>
                 </div>
             </div>
@@ -699,9 +749,9 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
     <section id="track-field">
         <div class="container">
             <h2>Track & Field</h2>
-            
+
             <img src="HIGHJUMP.jpg" alt="Kirsten Kelly competing in Track & Field" class="tf-photo">
-            
+
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-value">High Jump</div>
@@ -723,6 +773,10 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
                     <div class="stat-value">5'1.75" / 1.57m</div>
                     <div class="stat-label">High Jump PR</div>
                 </div>
+                <div class="stat-item">
+                    <div class="stat-value">#119</div>
+                    <div class="stat-label">National Ranking, NCAA DIII</div>
+                </div>
             </div>
 
             <div style="margin-top: 2rem; text-align: center;">
@@ -736,6 +790,7 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
                 <li>Grinnell Outdoor 3rd Highest All-Time High Jump</li>
                 <li>2026 Outdoor MWC Championship 4th Place Finish</li>
                 <li>2026 Indoor MWC Championship 4th Place Finish</li>
+                <li>#119 National Ranking, High Jump, NCAA DIII</li>
                 <li>2025 Illinois 3A State Qualifier</li>
                 <li>2025 Indoor CLS-South All-Conference</li>
                 <li>Glenbrook North Senior Sports Awards 101% Effort Award</li>
@@ -749,7 +804,7 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
     <section id="volunteer">
         <div class="container">
             <h2>Volunteer Work</h2>
-            
+
             <div class="experience-item">
                 <div class="experience-title">Math Tutor</div>
                 <div class="experience-org">Glenbrook North | Aug 2023 - May 2025</div>
@@ -761,7 +816,6 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
                 <div class="experience-org">Glenbrook North | Jan 2023 - May 2025</div>
                 <p>I participated in community service, volunteering, and fundraising initiatives including Trick or Treat for UNICEF, Cradles to Crayons, and Feed My Starving Children to support children in need locally and globally. Through this organization, I gained awareness of international conflicts and humanitarian issues while contributing to meaningful service projects that made a tangible impact in the community.</p>
             </div>
-
         </div>
     </section>
 
@@ -770,7 +824,7 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
             <h2>Hobbies & Interests</h2>
             <div class="intro">
                 <p>Outside of academics and athletics, I enjoy:</p>
-                
+
                 <ul class="content-list" style="margin-top: 1rem;">
                     <li>Reading - Feel free to give me recommendations!</li>
                     <li>Bass Guitar - Check out J4ss on Spotify! (NEW ALBUM OUT NOW)</li>
@@ -794,14 +848,13 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
         <p>kellykir@grinnell.edu</p>
         <button onclick="closeEmailPopup()">Close</button>
     </div>
-    
+
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -810,7 +863,6 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
             });
         });
 
-        // Email popup functions
         function showEmailPopup() {
             document.getElementById('email-overlay').style.display = 'block';
             document.getElementById('email-popup').style.display = 'block';
@@ -821,7 +873,6 @@ It’s incredibly meaningful to see an idea discussed through civic engagement p
             document.getElementById('email-popup').style.display = 'none';
         }
 
-        // Close popup when clicking overlay
         document.getElementById('email-overlay').addEventListener('click', closeEmailPopup);
     </script>
 </body>
